@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Advanced Search Page in Next.js with TypeScript
+
+## Introduction
+
+This project showcases an advanced search page built using Next.js and TypeScript. It demonstrates best practices in frontend development, including the use of asynchronous data fetching methods, state management, and unit testing. The search functionality is designed to provide a seamless user experience, leveraging modern web technologies and frameworks.
+
+## Features
+
+- **Next.js**: Utilizes the latest features of Next.js for server-side rendering and static site generation to deliver a fast and SEO-friendly search page.
+- **TypeScript**: Strongly typed programming language for JavaScript that ensures code reliability and maintainability.
+- **Asynchronous Data Fetching**: Implements various async options to handle API requests, including `getStaticProps`, `getServerSideProps`, and client-side fetching with SWR or React Query.
+- **State Management**: Uses Context API or Zustand for global state management, ensuring that the search criteria and results are managed efficiently across the application.
+- **Responsive Design**: Adopts a mobile-first approach to ensure the search page is accessible and user-friendly on all devices.
+- **Unit Testing**: Includes a comprehensive suite of tests using Jest and React Testing Library to ensure code quality and functionality.
+
+## Project Structure
+
+```plaintext
+/project-root
+  ├── components/          # Reusable UI components
+  ├── pages/               # Next.js pages including the main search page
+  ├── public/              # Static files like images and fonts
+  ├── styles/              # Global styles and component-specific styles
+  ├── utils/               # Utility functions and helpers
+  ├── hooks/               # Custom React hooks
+  ├── tests/               # Unit and integration tests
+  └── next.config.js       # Next.js configuration file
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- Node.js (version 12.x or later)
+- npm or Yarn
+
+### Installation
+
+To get a local copy up and running, follow these simple steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AdiAharonov/nextjs-search-page.git
+   ```
+
+2. Navigate to the project directory:
+
+```bash
+cd nextjs-search-page
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+Or if you use Yarn:
+
+```bash
+yarn
+```
+
+### Running the Application
+
+To run the application in development mode:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Open http://localhost:3000 to view it in your browser.
 
-## Learn More
+### Testing
 
-To learn more about Next.js, take a look at the following resources:
+To run the test suite:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+or
 
-## Deploy on Vercel
+```bash
+yarn test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Best Practices
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Type Safety**: Ensure all components and utilities are strongly typed.
+- **Async Handling**: Use async/await syntax for asynchronous operations and handle exceptions properly.
+- **Reusable Components**: Design UI components to be reusable and maintainable.
+- **Performance Optimization**: Implement lazy loading for images and conditional fetching for data.
+- **Accessibility**: Ensure the search page is accessible to all users, including those with disabilities.
+
+### Contributing
+
+We welcome contributions to improve this project. Please follow the contributing guidelines outlined in CONTRIBUTING.md.
+
+
