@@ -17,14 +17,15 @@ This project showcases an advanced search page built using Next.js and TypeScrip
 
 ```plaintext
 /project-root
-  ├── components/          # Reusable UI components
-  ├── pages/               # Next.js pages including the main search page
   ├── public/              # Static files like images and fonts
-  ├── styles/              # Global styles and component-specific styles
-  ├── utils/               # Utility functions and helpers
-  ├── hooks/               # Custom React hooks
-  ├── tests/               # Unit and integration tests
-  └── next.config.js       # Next.js configuration file
+  └── src/                 # Reusable UI components
+    ├── app/                  # Nexj.js app contents
+    ├── components/           # Reusable UI components
+    ├── pages/                # Next.js pages including the main search page
+    ├── styles/               # Global styles and component-specific styles
+    ├── utils/                # Utility functions and helpers
+    ├── hooks/                # Custom React hooks
+    └── tests/                # Unit and integration tests
 ```
 
 ## Getting Started
