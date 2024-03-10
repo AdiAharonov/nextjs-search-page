@@ -47,7 +47,7 @@ To get a local copy up and running, follow these simple steps:
 2. Navigate to the project directory:
 
 ```bash
-cd nextjs-search-page
+cd nextjs-search-page/complete-pages
 ```
 
 3. Install dependencies:
