@@ -6,7 +6,7 @@ import { SearchResult } from '@/types';
 
 const fetchSearchResults = async (query: string): Promise<SearchResult[]> => {
   if (query.trim() === '') return [];
-  const { data } = await axios.get<SearchResult[]>(`/api/search?query=${query}`);
+  const { data } = await axios.get<SearchResult[]>(`	https://pokeapi.co/api/v2/pokemon/${query}`);
   return data;
 };
 
