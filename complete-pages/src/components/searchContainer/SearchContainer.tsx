@@ -19,7 +19,7 @@ const SearchContainer: React.FC<SearchContainerProps> = ({ handleSubmit, searchT
         <button type="submit" className="btn bg-blue-500 text-white p-2 rounded">Search</button>
       </form>
 
-      <SelectContainer options={foodItems.filter((item => isTermIncluded(searchTerm, item.displayName)))} />
+      <SelectContainer options={foodItems.filter((item => searchTerm && isTermIncluded(searchTerm, item.displayName)))} />
     </div>
   );
 };
