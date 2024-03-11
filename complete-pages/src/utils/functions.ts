@@ -1,0 +1,1 @@
+export const isTermIncluded = (term: string, string: string) => string.replace(/\s/g, '').toLowerCase().includes(term.toLowerCase())
